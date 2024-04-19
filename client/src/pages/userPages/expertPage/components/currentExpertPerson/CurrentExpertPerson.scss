@@ -1,0 +1,106 @@
+.expert_person_watch {
+    padding-top: 50px;
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+
+    .expert_person_watch_container {
+        display: flex;
+        justify-content: space-between;
+        width: 66.6%;
+
+        .expert_person-left {
+            width: calc(100% - 300px);
+
+            .expert_person_container {
+                display: flex;
+                margin-top: 15px;
+
+                .paragraph_text {
+                    margin-right: 10px;
+                }
+
+                .container_image {
+                    width: 40px;
+                    height: 40px;
+                }
+
+                a {
+                    margin-right: 10px;
+                }
+            }
+
+            .paragraph_text {
+                margin-top: 10px;
+            }
+        }
+
+        .expert_person_watch_image_container {
+            width: 300px;
+            height: 300px;
+            overflow: hidden;
+            border-radius: 10px;
+
+            .expert_person_image {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+    }
+
+    .expert_person_paragraph_text {
+        width: calc(100% / 3);
+        display: flex;
+        align-items: center;
+        white-space: pre-wrap;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .expert_person_watch {
+        flex-direction: column;
+
+        .expert_person_watch_container {
+            width: 100%;
+
+            .expert_person-left {
+                width: calc(100% - 150px);
+            }
+        }
+
+        .expert_person_paragraph_text {
+            width: 100%;
+        }
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .expert_person_watch {
+        .expert_person_watch_container {
+            align-items: center;
+        }
+    }
+
+    .expert_person_watch .expert_person_watch_container .expert_person_watch_image_container {
+        width: 150px;
+        max-height: 150px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .expert_person_watch {
+        .expert_person_watch_container {
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: flex-start;
+            width: 100%;
+        }
+    }
+
+    .expert_person_watch .expert_person_watch_container .expert_person_watch_image_container {
+        width: 300px;
+        max-height: 300px;
+        margin-top: 30px;
+    }
+}

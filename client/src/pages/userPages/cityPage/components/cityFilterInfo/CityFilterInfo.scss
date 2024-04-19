@@ -1,0 +1,75 @@
+.city_filter {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 60px;
+
+    .city_filter_container {
+        width: 550px;
+
+        .city_filter_paragraph {
+            margin-top: 15px;
+        }
+
+        .city_filter_button {
+            margin-top: 15px;
+        }
+    }
+
+    .city_filter_buttons {
+        display: flex;
+        gap: 20px;
+    }
+    .custom_input-container .custom_input{
+        width: auto;
+    }
+}
+
+@media screen and (max-width: 1300px) {
+    .city_filter {
+        flex-direction: column;
+
+        .city_filter_container {
+            width: 100%;
+        }
+
+        .city_filter_buttons {
+            margin-top: 30px;
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+            gap: 0;
+        }
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .city_filter {
+        flex-direction: column;
+
+        .city_filter_container {
+            width: 100%;
+        }
+
+        .city_filter_buttons {
+            margin-top: 30px;
+            display: flex;
+            justify-content: space-between;
+            flex-direction: column;
+            width: 100%;
+
+            .custom_button {
+                margin-top: 10px;
+            }
+
+            .custom_input-container {
+                margin-top: 10px;
+
+                .custom_input {
+                    width: calc(100% - 50px);
+                }
+            }
+        }
+    }
+}

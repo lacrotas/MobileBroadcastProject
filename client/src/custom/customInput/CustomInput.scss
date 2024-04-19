@@ -1,0 +1,54 @@
+@font-face {
+    font-family: "Jura_med";
+    src: url("../../assets/fonts/Jura-Medium.ttf");
+}
+
+.custom_input-container {
+    position: relative;
+    display: inline-block;
+
+    .custom_input {
+        font-size: 24px;
+        padding: 10px 30px 10px 65px;
+        height: 30px;
+        border: 1px solid #802AEA;
+        border-radius: 30px;
+        font-family: "Jura_med";
+        width: 215px;
+
+        &:focus {
+            outline: 2px solid #802AEA;
+        }
+
+        &:hover {
+            cursor: pointer;
+            outline: 2px solid #802AEA;
+        }
+
+    }
+    .custom_image {
+        position: absolute;
+        top: 7px;
+        width: 38px;
+        height: 38px;
+        left: 10px;
+    }
+}
+
+@media screen and (max-width: 950px) {
+    .custom_input-container .custom_input {
+        font-size: 20px;
+        padding: 5px 5px 5px 45px;
+    }
+
+    .custom_text {
+        margin-left: 10px;
+    }
+
+    .custom_input-container .custom_image {
+        width: 30px;
+        height: 30px;
+        top: calc(50% - 15px);
+        left: 5px;
+    }
+}

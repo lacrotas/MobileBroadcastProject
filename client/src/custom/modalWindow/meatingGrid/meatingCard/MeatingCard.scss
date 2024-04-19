@@ -1,0 +1,91 @@
+.add_meating_card {
+    .card_container-hover {
+        display: none;
+    }
+
+    &:hover {
+
+        .card_container-hover {
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            background-color: rgba($color: #000000, $alpha: 0.6);
+            left: 0;
+            top: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 30px;
+        }
+    }
+}
+
+
+@font-face {
+    font-family: "Montser_Bold";
+    src: url(../../../../assets/fonts/Montserrat-Bold.ttf);
+}
+
+.add_meating_card {
+    margin-top: 50px;
+    width: 560px;
+    height: 240px;
+    padding: 30px;
+    background-color: #FFF;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3);
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+
+    .meating_container-text {
+        width: 280px;
+
+        .meating_label-offline {
+            background-color: #802AEA;
+            width: 100px;
+            border-radius: 10px;
+            color: #fff;
+            padding: 3px;
+            text-align: center;
+            font-family: "Montser_Bold";
+        }
+
+        .meating_label {
+            font-family: "Montser_Bold";
+            margin-top: 10px;
+        }
+
+        .meating_label-name {
+            font-family: "Montser_Bold";
+            color: #802AEA;
+            font-size: 25px;
+        }
+
+        .meating_container {
+            display: flex;
+            align-items: center;
+            margin-top: 10px;
+
+            .paragraph_text {
+                margin-left: 10px;
+            }
+        }
+    }
+
+    .meating_image {
+        width: 200px;
+    }
+}
+
+@media screen and (max-width: 860px) {
+    .add_meating_card {
+        width: 300px;
+        padding: 15px;
+    }
+
+    .add_meating_card .meating_image {
+        display: none;
+    }
+}

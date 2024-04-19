@@ -1,0 +1,17 @@
+.authorizaton{
+    position: relative;
+    z-index: 20;
+    background-color: #F9F9F9;
+    padding: 30px 40px;
+    border-radius: 30px;
+    text-align: center;
+    .authorizaton_input{
+        padding: 5px;
+        border-radius: 5px;
+        margin-top: 15px;
+        display: block;
+    }
+    .authorizaton_button{
+        margin-top: 20px;
+    }
+}

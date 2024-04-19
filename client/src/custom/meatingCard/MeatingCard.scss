@@ -1,0 +1,66 @@
+@font-face {
+    font-family: "Montser_Bold";
+    src: url(../../assets/fonts/Montserrat-Bold.ttf);
+}
+
+.meating_card {
+    width: 560px;
+    padding: 30px;
+    background-color: #FFF;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3);
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+
+    .meating_container-text {
+        width: 280px;
+
+        .meating_label-offline {
+            background-color: #802AEA;
+            width: 100px;
+            border-radius: 10px;
+            color: #fff;
+            padding: 3px;
+            text-align: center;
+            font-family: "Montser_Bold";
+        }
+
+        .meating_label {
+            font-family: "Montser_Bold";
+            margin-top: 10px;
+        }
+
+        .meating_label-name {
+            font-family: "Montser_Bold";
+            color: #802AEA;
+            font-size: 25px;
+        }
+
+        .meating_container {
+            display: flex;
+            align-items: center;
+            margin-top: 10px;
+
+            .paragraph_text {
+                margin-left: 10px;
+            }
+        }
+    }
+
+    .meating_image {
+        width: 200px;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .meating_card {
+        width: 300px;
+        padding: 15px;
+    }
+
+    .meating_card .meating_image {
+        display: none;
+    }
+}

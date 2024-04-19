@@ -1,0 +1,104 @@
+.expert_person {
+    padding-top: 50px;
+    display: flex;
+    justify-content: space-between;
+    .expert_person_container{
+        width: 66%;
+        display: flex;
+        justify-content: space-between;
+        .expert_person-center {
+            width: 50%;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            .expert_person_image {
+                width: 300px;
+                height: 300px;
+                border-radius: 50%;
+            }
+    
+            .expert_person_container {
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                gap: 10px;
+    
+                .container_sex {
+                    display: flex;
+                    justify-content: space-between;
+                    gap: 20px;
+                }
+            }
+        }
+    }
+    .expert_person-left {
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        align-items: flex-start;
+        .expert_person_container_reduct {
+            display: flex;
+            flex-direction: column;
+
+            .tehnology_container {
+                display: flex;
+                align-items: center;
+
+                .container_image {
+                    width: 30px;
+                    height: 30px;
+                }
+            }
+            .button {
+                margin-top: 15px;
+            }
+        }
+
+        input {
+            width: 100%;
+            box-sizing: border-box;
+        }
+        .expert_person_container{
+            margin-top: 0px;
+        }
+    }
+
+
+    .expert_person_right {
+        width: calc(100% / 4);
+        display: flex;
+        align-items: center;
+    }
+}
+@media screen and (max-width: 1000px) {
+    .expert_person{
+        flex-direction: column;
+        gap: 30px;
+        .expert_person_container{
+            width: 100%;
+        }
+        .expert_person-left{
+            width: 100%;
+        }
+        .expert_person-center {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .expert_person_right{
+            width: 100%;
+        }
+    }
+}
+@media screen and (max-width: 700px) {
+    .expert_person .expert_person-center{
+        width: auto;
+    }
+    .expert_person .expert_person_container .expert_person-center .expert_person_image{
+        width: 130px;
+        height: 130px;
+    }
+}

@@ -1,0 +1,85 @@
+.custom_button_container {
+    position: relative;
+
+    &:hover {
+        .custom_button {
+            cursor: pointer;
+            box-shadow: 0 0 0 3px #802AEA;
+        }
+    }
+
+    .custom_button-container {
+        position: absolute;
+        z-index: 3;
+        top: 30px;
+        border-radius: 0 0 20px 20px;
+        left: -3px;
+        min-width: 100%;
+        max-height: 300px;
+        overflow: auto;
+        background-color: #fff;
+        border: solid 3px #802AEA;
+        border-top: solid 0px #802AEA;
+        background-color: #f6f6f6;
+        text-align: center; 
+        p {
+            font-size: 24px;
+            border-bottom: 1px solid black;
+            padding-bottom: 5px;
+
+            &:last-child {
+                border-bottom: 0px solid black;
+                padding-bottom: 5px;
+            }
+
+            &:first-child {
+                padding-top: 25px;
+            }
+
+            &:hover {
+                cursor: pointer;
+                font-weight: bold;
+            }
+        }
+    }
+}
+
+.custom_button {
+    display: flex;
+    align-items: center;
+    padding: 10px 30px 10px 10px;
+    background-color: #fff;
+    color: #000;
+    font-size: 24px;
+    border: 1px solid #802AEA;
+    height: 30px;
+    font-family: "Jura_med";
+    border-radius: 30px;
+    position: relative;
+    z-index: 5;
+
+
+
+    .custom_text {
+        margin-left: 15px;
+    }
+
+    .custom_image {
+        width: 40px;
+        height: 40px;
+    }
+
+    @media screen and (max-width: 950px) {
+        font-size: 20px;
+        padding: 5px 15px 5px 5px;
+
+        .custom_text {
+            margin-left: 10px;
+        }
+
+        .custom_image {
+            width: 30px;
+            height: 30px;
+        }
+    }
+}

@@ -1,0 +1,19 @@
+.sponsor_statement{
+    width: 90%;
+    margin-left: 5%;
+    max-width: 450px;
+    position: relative;
+    z-index: 20;
+    background-color: #F9F9F9;
+    padding: 30px 40px;
+    border-radius: 30px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+    .expert_statement_input{
+        display: block;
+        width: 90%;
+    }
+}

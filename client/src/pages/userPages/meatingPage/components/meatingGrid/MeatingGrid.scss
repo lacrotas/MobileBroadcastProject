@@ -1,0 +1,15 @@
+.meating_grid {
+    display: grid;
+   width: 100%;
+    grid-template-columns: repeat(auto-fill, minmax(620px, 1fr));
+    gap: 30px;
+
+    .meating_card {
+        justify-self: center;
+    } 
+}
+@media screen and (max-width: 650px) {
+    .meating_grid{
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    }
+}

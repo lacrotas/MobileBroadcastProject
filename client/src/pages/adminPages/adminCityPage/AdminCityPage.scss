@@ -1,0 +1,88 @@
+.city_grid {
+    .city_grid_button {
+        margin-top: calc(50% - 25px);
+        width: 250px;
+        height: 50px;
+    }
+}
+
+.admin_city_page {
+    margin-top: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    .admin_city_page_container {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+        gap: 30px;
+        margin-top: 20px;
+
+        .file-input-container {
+            .custom-button {
+                text-align: center;
+                width: 100%;
+                padding: 15px;
+            }
+        }
+    }
+
+    .container_galary {
+        margin-top: 20px;
+
+        .gallary_person_container_reduct {
+            margin-top: 20px;
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 30px;
+
+            .galary_container {
+                display: flex;
+                width: 250px;
+
+                .paragraph_text.my_input {
+                    text-overflow: ellipsis;
+                    white-space: nowrap;
+                    overflow: hidden;
+                    direction: rtl;
+                }
+            }
+
+            a {
+                justify-self: center;
+            }
+
+            .gallary_item {
+                display: flex;
+                align-items: center;
+                gap: 10px;
+            }
+        }
+    }
+
+    .container_organizator {
+        margin-top: 20px;
+
+        .organizator_person_container_reduct {
+            margin-top: 20px;
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 30px;
+            align-items: center;
+        }
+    }
+
+    .button_container_flex {
+        margin-top: 50px;
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+    }
+
+    .button_final {
+        margin-top: 30px;
+        margin-bottom: 50px;
+        width: 250px;
+        float: right;
+    }
+}

@@ -1,0 +1,15 @@
+.anhor_grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+    gap: 30px;
+
+    .anhor_card {
+        justify-self: center;
+    }
+}
+
+@media screen and (max-width: 530px) {
+    .anhor_grid {
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    }
+}

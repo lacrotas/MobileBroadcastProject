@@ -1,0 +1,50 @@
+.expert_statement {
+    position: relative;
+    z-index: 20;
+    background-color: #F9F9F9;
+    padding: 30px 40px;
+    border-radius: 30px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+
+    .expert_person-center {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        .expert_person_center_image_container {
+            width: 100px;
+            height: 100px;
+            overflow: hidden;
+
+            .expert_person_image {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                border-radius: 50%;
+            }
+        }
+
+        .expert_person_container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 10px;
+
+            .container_sex {
+                display: flex;
+                justify-content: space-between;
+                gap: 20px;
+            }
+        }
+    }
+
+    .expert_statement_input {
+        display: block;
+        width: 90%;
+    }
+}

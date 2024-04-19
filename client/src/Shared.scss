@@ -1,0 +1,118 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.app {
+  min-height: 100vh;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+a {
+  text-decoration: none;
+}
+
+body section {
+  margin-top: 50px;
+}
+
+@font-face {
+  font-family: "Jura_med";
+  src: url("./assets/fonts/Jura-Medium.ttf");
+}
+
+@font-face {
+  font-family: "Jura_bold";
+  src: url("./assets/fonts/Jura-Bold.ttf");
+}
+
+@font-face {
+  font-family: "Montserat_reg";
+  src: url("./assets/fonts/Montserrat-Regular.ttf");
+}
+
+/*text*/
+.paragraph_text {
+  font-family: "Montserat_reg";
+  font-size: 20px;
+}
+
+.h3_text {
+  font-size: 36px;
+}
+
+.h2_text {
+  font-size: 48px;
+}
+
+.h2_text,
+.h3_text {
+  color: #000;
+  font-family: "Jura_bold";
+}
+
+@media screen and (max-width: 600px) {
+  .h3_text {
+    font-size: 28px;
+  }
+
+  .h2_text {
+    font-size: 36px;
+  }
+
+  .paragraph_text {
+    font-size: 16px;
+  }
+}
+
+/*container*/
+.app {
+  .app_content {
+    width: calc(100% - 100px);
+    margin-left: 50px;
+
+    @media screen and (max-width: 800px) {
+      width: calc(100% - 40px);
+      margin-left: 20px;
+    }
+  }
+}
+
+/*elements*/
+.button {
+  font-family: "Jura_med";
+  font-size: 17px;
+  color: #fff;
+  background-color: #802aea;
+  border: none;
+  padding: 10px 30px;
+  border-radius: 30px;
+
+  &:hover {
+    cursor: pointer;
+    background-color: #5e1bb0;
+    transition: all 0.3s ease-in-out;
+  }
+}
+
+.my_input {
+  padding: 5px;
+  border-radius: 10px;
+  font-family: "Montserat_reg";
+  font-size: 20px;
+  border-radius: 0;
+  border: none;
+  border-bottom: 1px solid #000;
+  background-color: rgba($color: #000000, $alpha: 0);
+  &:hover {
+    border: none;
+    border-bottom: 1px solid #000;
+  }
+
+  &:focus {
+    outline: none;
+  }
+}

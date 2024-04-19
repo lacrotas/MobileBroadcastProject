@@ -1,0 +1,16 @@
+.statement_grid {
+    padding-top: 50px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+    gap: 30px;
+
+    .statement_card {
+        justify-self: center;
+    }
+}
+
+@media screen and (max-width: 530px) {
+    .statement_grid {
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    }
+}

@@ -1,0 +1,26 @@
+.loginPage {
+    margin-top: calc(50vh - 180px);
+    height: 300px;
+    width: 300px;
+    background-color: #F9F9F9;
+    padding: 30px 40px;
+    border-radius: 30px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-left: calc(50% - 190px);
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.3);
+
+    .loginPage_input {
+        padding: 5px;
+        margin-top: 15px;
+        display: block;
+    }
+
+    .loginPage_button {
+        margin-top: 20px;
+        width: 180px;
+    }
+}

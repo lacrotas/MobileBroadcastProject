@@ -1,0 +1,75 @@
+.current_city {
+    width: calc(100% - 20px);
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding-top: 50px;
+    position: relative;
+
+    .current_city_image-logo {
+        width: 400px;
+        height: 400px;
+        border-radius: 30%;
+    }
+
+    .current_city_text {
+        margin-left: 20px;
+        margin-top: 100px;
+        .city_text_paragraph {
+            margin-top: 15px;
+        }
+
+        .city_text_button {
+            margin-top: 30px;
+        }
+    }
+
+    .current_city_image-back {
+        position: relative;
+    }
+}
+@media screen and (max-width: 1120px) {
+    .current_city .current_city_text{
+        margin-top: 50px;
+    }
+}
+
+@media screen and (max-width: 840px) {
+    .current_city {
+        .current_city_image-logo {
+            width: 250px;
+            height: 250px;
+        }
+        .current_city_text{
+            margin-top: 0px;
+        }
+    }
+}
+
+@media screen and (max-width: 655px) {
+    .current_city {
+        flex-direction: column;
+        align-items: center;
+
+        .current_city_image-logo {
+            width: 250px;
+            height: 250px;
+        }
+
+        .current_city_image-back {
+            position: absolute;
+            left: 0px;
+        }
+
+        .current_city_text {
+            width: 100%;
+            margin-left: 0px;
+        }
+    }
+}
+@media screen and (max-width: 360px) {
+    .current_city .current_city_image-logo {
+        width: 220px;
+        height: 220px;
+    }
+}

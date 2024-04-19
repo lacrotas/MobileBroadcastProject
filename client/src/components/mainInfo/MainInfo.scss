@@ -1,0 +1,36 @@
+.main_info {
+    padding-top: 30px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .main_info_container {
+        width: 570px;
+        .container_paragraph{
+            margin-top: 15px;
+        }
+        .container_button{
+            margin-top: 15px;
+        }
+    }
+}
+
+@media screen and (max-width: 1025px) {
+    .main_info{
+        flex-direction: column;
+        padding-top: 50px;
+        .main_info_container{
+            width: 100%;
+        }
+        .map_svg{
+            margin-top: 20px;
+        }
+    }
+}
+@media screen and (max-width: 625px) {
+    .map_svg{
+        width: 400px;
+        height: 198.5px;
+    }
+}

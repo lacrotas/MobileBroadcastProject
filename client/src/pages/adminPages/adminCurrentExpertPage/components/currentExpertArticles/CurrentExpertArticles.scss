@@ -1,0 +1,119 @@
+.current_articles {
+    .paragraph_text {
+        margin-top: 20px;
+    }
+
+    .reducting_buttons {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .button {
+        margin-top: 20px;
+    }
+
+    .articles_container {
+        margin-top: 20px;
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+        gap: 30px;
+
+        .articles_container_item-ready {
+            display: flex;
+            justify-content: space-between;
+            width: 300px;
+            align-items: center;
+
+            .paragraph_text {
+                margin: 0;
+            }
+
+            img {
+                width: 40px;
+                height: 40px;
+            }
+
+            .my_input {
+                width: 200px;
+            }
+
+            .file-input-container {
+                width: 100px;
+
+                .custom-button {
+                    width: 120px;
+                    text-overflow: ellipsis;
+                    white-space: nowrap;
+                    overflow: hidden;
+                    direction: rtl;
+                }
+            }
+        }
+
+        .articles_container_item {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            width: 300px;
+
+            .input_container {
+                display: flex;
+                flex-direction: column;
+
+                .my_input {
+                    width: 240px;
+                    margin-bottom: 10px;
+                }
+            }
+
+            img {
+                width: 40px;
+                height: 40px;
+            }
+
+            .file-input-container {
+                width: 200px;
+
+                .custom-button {
+                    width: 120px;
+                    text-overflow: ellipsis;
+                    white-space: nowrap;
+                    overflow: hidden;
+                    direction: rtl;
+                }
+            }
+
+            .ready_item_link {
+                width: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                .paragraph_text{
+                    white-space: nowrap;
+                    overflow: hidden; 
+                    text-overflow: ellipsis;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .current_articles {
+        .articles_container {
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+
+            .articles_container_item {
+                width: 300px;
+
+                .my_input {
+                    width: 150px;
+                }
+
+                .file-input-container {
+                    width: 150px;
+                }
+            }
+        }
+    }
+}

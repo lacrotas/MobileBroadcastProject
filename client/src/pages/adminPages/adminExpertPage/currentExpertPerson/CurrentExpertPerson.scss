@@ -1,0 +1,169 @@
+.current_expert_page {
+    .button {
+        margin-top: 30px;
+        float: right;
+    }
+}
+
+.expert_person {
+    padding-top: 50px;
+    display: flex;
+    justify-content: space-between;
+
+    .expert_person_container {
+        width: 66%;
+        display: flex;
+        justify-content: space-between;
+
+        .expert_person-center {
+            width: 50%;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+
+            .expert_person_center_image_container {
+                width: 300px;
+                height: 300px;
+                overflow: hidden;
+                .expert_person_image {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                    border-radius: 50%;
+                }
+            }
+
+            .expert_person_container {
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                gap: 10px;
+
+                .container_sex {
+                    display: flex;
+                    justify-content: space-between;
+                    gap: 20px;
+                }
+            }
+        }
+    }
+
+    .expert_person-left {
+        width: 50%;
+        max-width: 300px;
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        align-items: flex-start;
+
+        .expert_person_container_reduct {
+            display: flex;
+            flex-direction: column;
+
+            .tehnology_container {
+                display: flex;
+                align-items: center;
+                width: calc(100% - 10px);
+                border: 1px solid #000;
+                border-radius: 10px;
+                padding: 5px;
+                margin-bottom: 10px;
+
+                .container_image {
+                    width: 30px;
+                    height: 30px;
+                }
+
+                .my_input {
+                    border: none;
+                    margin-top: 0;
+
+                    &:hover {
+                        border: none;
+                    }
+                }
+            }
+
+            .button {
+                margin-top: 0;
+            }
+        }
+
+        input {
+            width: 100%;
+            box-sizing: border-box;
+        }
+
+        .expert_person_container {
+            margin-top: 0px;
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+        }
+    }
+
+
+    .expert_person_right {
+        width: calc(100% / 4);
+        display: flex;
+        align-items: center;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .expert_person {
+        flex-direction: column;
+        gap: 30px;
+
+        .expert_person_container {
+            width: 100%;
+        }
+
+        .expert_person-left {
+            width: 100%;
+        }
+
+        .expert_person-center {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .expert_person_right {
+            width: 100%;
+        }
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .expert_person .expert_person-center {
+        width: auto;
+    }
+
+    .expert_person .expert_person_container .expert_person-center .expert_person_center_image_container {
+        width: 130px;
+        height: 130px;
+    }
+}
+
+@media screen and (max-width: 460px) {
+    .expert_person .expert_person_container {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        .expert_person-left {
+            width: 100%;
+        }
+    }
+
+    .expert_person .expert_person_paragraph_text {
+        width: 100% !important;
+    }
+
+    .expert_person .expert_person_container .expert_person-center {
+        margin-top: 20px;
+    }
+}

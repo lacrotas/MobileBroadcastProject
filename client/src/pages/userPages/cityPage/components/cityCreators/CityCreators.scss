@@ -1,0 +1,25 @@
+.city_creators {
+
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 30px;
+
+    .city_creators_container {
+        width: 300px;
+
+        .city_creators_paragraph {
+            margin-top: 20px;
+        }
+    }
+}
+
+@media screen and (max-width: 670px) {
+    .city_creators {
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+        justify-items: center;
+        .city_creators_container {
+            width: 100%;
+        }
+    }
+}
