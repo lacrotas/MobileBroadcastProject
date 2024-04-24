@@ -15,6 +15,6 @@ export const MEATING_ADMIN_ROUTE = '/admin/meating';
 export const MEATING_ADD_ADMIN_ROUTE = '/admin/meating/add';
 export const REDUCT_EXPERT_ADMIN_ROUTE = '/admin/reduct';
 export const ADD_ADMIN_ROUTE = '/admin/add';
-export const SPONSOR_STATEMENT = '/admin/sponsorStatement';
+export const USER_REDUCT = '/admin/userReduct';
 export const ADMIN_SPONSOR = '/admin/sponsor';
 

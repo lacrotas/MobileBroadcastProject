@@ -3,7 +3,7 @@ import {
     MAIN_ROUTE, CITY_ROUTE, EXPERT_ROUTE,
     MEATING_ROUTE, EXPERT_ADMIN_ROUTE, ADMIN_MAIN_ROUTE,
     CITY_ADMIN_ROUTE, MEATING_ADMIN_ROUTE, ADD_ADMIN_ROUTE,
-    MEATING_ADD_ADMIN_ROUTE, COUNTRY_ADMIN_ROUTE, SPONSOR_STATEMENT,
+    MEATING_ADD_ADMIN_ROUTE, COUNTRY_ADMIN_ROUTE, USER_REDUCT,
     ADMIN_SPONSOR, LOGIN_ROUTE
 } from './Const';
 import CurrentCityPage from "../userPages/cityPage/CurrentCityPage";
@@ -18,7 +18,7 @@ import AdminCountryPage from "../adminPages/adminCountryPage/AdminCountryPage";
 import AdminExpertPage from "../adminPages/adminExpertPage/AdminExpertPage";
 import AdminCurrentExpertInfo from "../adminPages/adminCurrentExpertPage/CurrentExpertInfo";
 import CurrentAdminCityPage from "../adminPages/adminCityPage/CurrentAdminCityPage";
-import AdminStatementPage from "../adminPages/adminStatementPage/AdminStatementPage";
+import AdminUserReductPage from "../adminPages/adminUserReductPage/AdminUserReductPage";
 import AdminSponsorPage from "../adminPages/adminSponsorPage/AdminSponsorPage";
 import LoginPage from "../userPages/loginPage/LoginPage";
 
@@ -91,8 +91,8 @@ export const adminRoutes = [
         Component: MainPage
     },
     {
-        path: SPONSOR_STATEMENT,
-        Component: AdminStatementPage
+        path: USER_REDUCT,
+        Component: AdminUserReductPage
     },
     {
         path: ADMIN_SPONSOR,

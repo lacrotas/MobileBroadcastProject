@@ -18,3 +18,12 @@ export const check = async () => {
     localStorage.setItem('token', data.token)
     return jwt_decode(data.token)
 }
+
+export const updateUser = async (id, item) => {
+    if (!id) {
+        return null;
+    } else {
+        const { data } = await $host.put('api/user/update/' + id, item)
+        return data;
+    }
+}

@@ -5,9 +5,9 @@ const ApiError = require("../error/ApiError");
 
 const generateJwt = (id, login) => {
     return jwt.sign(
-        {id, login},
+        { id, login },
         process.env.SECRET_KEY,
-        {expiresIn: '24h'}
+        { expiresIn: '24h' }
     )
 }
 
@@ -29,8 +29,38 @@ class UserController {
             { expiresIn: '24h' }
         );
         return res.json({ token });
-
     }
+
+    async updateUser(req, res) {
+        const { id } = req.params;
+        const { login, password } = req.body;
+        try {
+            const hashPassword = await bcrypt.hash(password, 5);
+            
+            const [updatedRowsCount, updatedRows] = await User.update(
+                {
+                    login: login,
+                    password: hashPassword,
+                },
+                {
+                    returning: true,
+                    where: { id }
+                }
+            );
+
+            if (updatedRowsCount > 0) {
+                // Данные успешно обновлены, возвращаем обновленные данные
+                res.status(200).json({ message: 'Данные успешно обновлены', updatedRows });
+            } else {
+                // Запись с указанным id не найдена
+                res.status(404).json({ message: 'Запись не найдена' });
+            }
+        } catch (error) {
+            console.error('Ошибка при обновлении данных:', error);
+            res.status(500).json({ message: 'Ошибка сервера' });
+        }
+    }
+
     async login(req, res, next) {
         const { login, password } = req.body;
         const user = await User.findOne({ where: { login } });
@@ -50,7 +80,7 @@ class UserController {
     }
     async check(req, res, next) {
         const token = generateJwt(req.user.id, req.user.login)
-        return res.json({token})
+        return res.json({ token })
     }
 }
 

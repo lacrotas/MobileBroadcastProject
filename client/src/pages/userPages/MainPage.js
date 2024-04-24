@@ -6,10 +6,10 @@ import SLIDER from "../../base/SLIDER";
 function MainPage() {
   return (
     <div className="main_page">
-      {/* <MainInfo />
+      <MainInfo />
       <AnhorGrid />
       <SliderMain imgArr={SLIDER} />
-      <Sponsors /> */}
+      <Sponsors />
     </div>
   );
 }
